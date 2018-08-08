@@ -2,7 +2,7 @@
 import Layouts
 import UIKit
 
-class DefaultWishListViewController: UIViewController {
+final class ViewController: UIViewController {
 
 	@IBOutlet weak var collectionView: UICollectionView?
 
@@ -23,7 +23,7 @@ class DefaultWishListViewController: UIViewController {
 
 // MARK: - UICollectionViewDataSource
 
-extension DefaultWishListViewController: UICollectionViewDataSource {
+extension ViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
@@ -32,13 +32,16 @@ extension DefaultWishListViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-		return collectionView.dequeueReusableCell(withReuseIdentifier: WishListProductCell.reuseIdentifier, for: indexPath) as! WishListProductCell
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.reuseIdentifier, for: indexPath) as! Cell
+
+		cell.indexPath = indexPath
+		return cell
 	}
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension DefaultWishListViewController: UICollectionViewDelegateFlowLayout {
+extension ViewController: UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
