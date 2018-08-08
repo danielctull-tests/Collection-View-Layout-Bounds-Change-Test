@@ -2,28 +2,11 @@
 import Layouts
 import UIKit
 
-final class ViewController: UIViewController {
-
-	@IBOutlet weak var collectionView: UICollectionView?
-
-	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-
-		super.viewWillTransition(to: size, with: coordinator)
-
-		// Calling to invalidate the layout here works.
-		//  This is our current workaround to the problem.
-
-//		coordinator.animate(alongsideTransition: { _ in
-//
-//			self.collectionView?.collectionViewLayout.invalidateLayout()
-//
-//		}, completion: nil)
-	}
-}
+final class BrokenViewController: UIViewController {}
 
 // MARK: - UICollectionViewDataSource
 
-extension ViewController: UICollectionViewDataSource {
+extension BrokenViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
@@ -41,17 +24,13 @@ extension ViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension BrokenViewController: UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-		guard let layout = collectionViewLayout as? Layouts.GridCollectionViewLayout else {
-			return .zero
-		}
-
+		let layout = collectionViewLayout as! GridCollectionViewLayout
 		let width = layout.widthForItem(at: indexPath)
-		let height = CGFloat(100)
-		return CGSize(width: width, height: height)
+		return CGSize(width: width, height: 100)
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
