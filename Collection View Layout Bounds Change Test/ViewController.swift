@@ -2,11 +2,11 @@
 import Layouts
 import UIKit
 
-final class BrokenViewController: UIViewController {}
+final class ViewController: UIViewController {}
 
 // MARK: - UICollectionViewDataSource
 
-extension BrokenViewController: UICollectionViewDataSource {
+extension ViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
@@ -24,7 +24,7 @@ extension BrokenViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension BrokenViewController: UICollectionViewDelegateFlowLayout {
+extension ViewController: UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 

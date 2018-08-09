@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24407049211B53D400E6B90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24407048211B53D400E6B90B /* AppDelegate.swift */; };
-		2440704B211B53D400E6B90B /* BrokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2440704A211B53D400E6B90B /* BrokenViewController.swift */; };
 		24407050211B53D500E6B90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2440704F211B53D500E6B90B /* Assets.xcassets */; };
 		24407053211B53D500E6B90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24407051211B53D500E6B90B /* LaunchScreen.storyboard */; };
 		2440705B211B53E700E6B90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2440705A211B53E700E6B90B /* Main.storyboard */; };
@@ -21,8 +20,8 @@
 		24407075211B56CA00E6B90B /* UICollectionViewFlowLayout+DelegateAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24407071211B56CA00E6B90B /* UICollectionViewFlowLayout+DelegateAccess.swift */; };
 		24407077211B588100E6B90B /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24407076211B588100E6B90B /* Cell.swift */; };
 		2440707B211B643100E6B90B /* Broken.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2440707A211B643100E6B90B /* Broken.storyboard */; };
-		2440707D211B645C00E6B90B /* WorkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2440707C211B645C00E6B90B /* WorkingViewController.swift */; };
-		24407080211B646900E6B90B /* Working.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2440707F211B646900E6B90B /* Working.storyboard */; };
+		24E7EC9F211C2DF600B3E248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E7EC9D211C2DF600B3E248 /* ViewController.swift */; };
+		24E7ECA0211C2DF600B3E248 /* Working.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E7EC9E211C2DF600B3E248 /* Working.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		24407045211B53D400E6B90B /* Collection View Layout Bounds Change Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection View Layout Bounds Change Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24407048211B53D400E6B90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2440704A211B53D400E6B90B /* BrokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenViewController.swift; sourceTree = "<group>"; };
 		2440704F211B53D500E6B90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24407052211B53D500E6B90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24407054211B53D500E6B90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,8 +64,8 @@
 		24407071211B56CA00E6B90B /* UICollectionViewFlowLayout+DelegateAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+DelegateAccess.swift"; sourceTree = "<group>"; };
 		24407076211B588100E6B90B /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		2440707A211B643100E6B90B /* Broken.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Broken.storyboard; sourceTree = "<group>"; };
-		2440707C211B645C00E6B90B /* WorkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingViewController.swift; sourceTree = "<group>"; };
-		2440707F211B646900E6B90B /* Working.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Working.storyboard; sourceTree = "<group>"; };
+		24E7EC9D211C2DF600B3E248 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24E7EC9E211C2DF600B3E248 /* Working.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Working.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +111,9 @@
 				24407048211B53D400E6B90B /* AppDelegate.swift */,
 				2440705A211B53E700E6B90B /* Main.storyboard */,
 				24407076211B588100E6B90B /* Cell.swift */,
-				24407079211B641A00E6B90B /* Broken (UIViewController) */,
-				24407078211B640500E6B90B /* Working (UICollectionViewController) */,
+				24E7EC9D211C2DF600B3E248 /* ViewController.swift */,
+				24E7EC9C211C2DF600B3E248 /* Working (Constraints to Safe Area) */,
+				24407079211B641A00E6B90B /* Broken (Constraints to Superview) */,
 				2440704F211B53D500E6B90B /* Assets.xcassets */,
 				24407051211B53D500E6B90B /* LaunchScreen.storyboard */,
 				24407054211B53D500E6B90B /* Info.plist */,
@@ -135,22 +134,20 @@
 			path = Layouts;
 			sourceTree = "<group>";
 		};
-		24407078211B640500E6B90B /* Working (UICollectionViewController) */ = {
-			isa = PBXGroup;
-			children = (
-				2440707F211B646900E6B90B /* Working.storyboard */,
-				2440707C211B645C00E6B90B /* WorkingViewController.swift */,
-			);
-			path = "Working (UICollectionViewController)";
-			sourceTree = "<group>";
-		};
-		24407079211B641A00E6B90B /* Broken (UIViewController) */ = {
+		24407079211B641A00E6B90B /* Broken (Constraints to Superview) */ = {
 			isa = PBXGroup;
 			children = (
 				2440707A211B643100E6B90B /* Broken.storyboard */,
-				2440704A211B53D400E6B90B /* BrokenViewController.swift */,
 			);
-			path = "Broken (UIViewController)";
+			path = "Broken (Constraints to Superview)";
+			sourceTree = "<group>";
+		};
+		24E7EC9C211C2DF600B3E248 /* Working (Constraints to Safe Area) */ = {
+			isa = PBXGroup;
+			children = (
+				24E7EC9E211C2DF600B3E248 /* Working.storyboard */,
+			);
+			path = "Working (Constraints to Safe Area)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +248,7 @@
 				2440707B211B643100E6B90B /* Broken.storyboard in Resources */,
 				2440705B211B53E700E6B90B /* Main.storyboard in Resources */,
 				24407050211B53D500E6B90B /* Assets.xcassets in Resources */,
-				24407080211B646900E6B90B /* Working.storyboard in Resources */,
+				24E7ECA0211C2DF600B3E248 /* Working.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E7EC9F211C2DF600B3E248 /* ViewController.swift in Sources */,
 				24407077211B588100E6B90B /* Cell.swift in Sources */,
-				2440704B211B53D400E6B90B /* BrokenViewController.swift in Sources */,
-				2440707D211B645C00E6B90B /* WorkingViewController.swift in Sources */,
 				24407049211B53D400E6B90B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
