@@ -38,24 +38,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-8b-ySL">
-                                <rect key="frame" x="99.5" y="238.5" width="176" height="190"/>
+                                <rect key="frame" x="95.5" y="198.5" width="184" height="270"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-rO-E7O">
-                                        <rect key="frame" x="0.0" y="0.0" width="176" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
                                         <state key="normal" title="Auto Layout to Superview"/>
                                         <connections>
                                             <segue destination="hbd-bj-SHO" kind="show" id="EQf-J4-UUe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gB-ab-oAa">
-                                        <rect key="frame" x="0.0" y="80" width="176" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="184" height="30"/>
                                         <state key="normal" title="Auto Layout to Safe Area"/>
                                         <connections>
                                             <segue destination="4Zb-0x-cfy" kind="show" id="Kqm-y9-M3o"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzS-nz-1lS">
+                                        <rect key="frame" x="0.0" y="160" width="184" height="30"/>
+                                        <state key="normal" title="UICollectionViewController"/>
+                                        <connections>
+                                            <segue destination="6MD-3o-qKA" kind="show" id="9e0-K5-WoV"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9D2-Sq-jEY">
-                                        <rect key="frame" x="0.0" y="160" width="176" height="30"/>
+                                        <rect key="frame" x="0.0" y="240" width="184" height="30"/>
                                         <state key="normal" title="Springs and Struts"/>
                                         <connections>
                                             <segue destination="Zeh-n0-Vuk" kind="show" id="Qke-rT-RqR"/>
@@ -82,7 +89,15 @@
                 <viewControllerPlaceholder storyboardName="AutoLayoutSafeArea" id="4Zb-0x-cfy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQG-bK-4hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="22"/>
+            <point key="canvasLocation" x="1321" y="24"/>
+        </scene>
+        <!--CollectionViewController-->
+        <scene sceneID="Tmg-4h-JUH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CollectionViewController" id="6MD-3o-qKA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaA-m7-jho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342" y="70"/>
         </scene>
         <!--SpringsAndStruts-->
         <scene sceneID="mwE-M8-QAs">
@@ -98,7 +113,7 @@
                 <viewControllerPlaceholder storyboardName="AutoLayoutSuperview" id="hbd-bj-SHO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjr-wb-QRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1327" y="-22"/>
+            <point key="canvasLocation" x="1327" y="-20"/>
         </scene>
     </scenes>
 </document>
