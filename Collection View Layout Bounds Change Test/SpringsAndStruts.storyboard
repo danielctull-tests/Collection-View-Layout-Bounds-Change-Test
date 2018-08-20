@@ -58,6 +58,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Vag-Rp-i1u" id="ijf-EG-aev"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eID-KH-oDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

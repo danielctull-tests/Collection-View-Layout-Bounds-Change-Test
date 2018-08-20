@@ -68,6 +68,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rak-cL-1b7"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Vag-Rp-i1u" id="3JN-pF-zVM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eID-KH-oDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
