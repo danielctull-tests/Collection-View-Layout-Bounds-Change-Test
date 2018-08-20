@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n8P-Ce-5h1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n8P-Ce-5h1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,20 +38,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-8b-ySL">
-                                <rect key="frame" x="159" y="278.5" width="57" height="110"/>
+                                <rect key="frame" x="99.5" y="238.5" width="176" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-rO-E7O">
-                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
-                                        <state key="normal" title="Broken"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="30"/>
+                                        <state key="normal" title="Auto Layout to Superview"/>
                                         <connections>
-                                            <segue destination="hbd-bj-SHO" kind="show" id="qP5-e9-fbc"/>
+                                            <segue destination="hbd-bj-SHO" kind="show" id="EQf-J4-UUe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gB-ab-oAa">
-                                        <rect key="frame" x="0.0" y="80" width="57" height="30"/>
-                                        <state key="normal" title="Working"/>
+                                        <rect key="frame" x="0.0" y="80" width="176" height="30"/>
+                                        <state key="normal" title="Auto Layout to Safe Area"/>
                                         <connections>
-                                            <segue destination="4Zb-0x-cfy" kind="show" id="get-kt-6La"/>
+                                            <segue destination="4Zb-0x-cfy" kind="show" id="Kqm-y9-M3o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9D2-Sq-jEY">
+                                        <rect key="frame" x="0.0" y="160" width="176" height="30"/>
+                                        <state key="normal" title="Springs and Struts"/>
+                                        <connections>
+                                            <segue destination="Zeh-n0-Vuk" kind="show" id="Qke-rT-RqR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,21 +76,29 @@
             </objects>
             <point key="canvasLocation" x="709" y="49"/>
         </scene>
-        <!--Working-->
+        <!--AutoLayoutSafeArea-->
         <scene sceneID="fLs-Tl-Fvd">
             <objects>
-                <viewControllerPlaceholder storyboardName="Working" id="4Zb-0x-cfy" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AutoLayoutSafeArea" id="4Zb-0x-cfy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQG-bK-4hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262" y="148"/>
+            <point key="canvasLocation" x="1321" y="22"/>
         </scene>
-        <!--Broken-->
+        <!--SpringsAndStruts-->
+        <scene sceneID="mwE-M8-QAs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SpringsAndStruts" id="Zeh-n0-Vuk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5c-9Y-EbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="115"/>
+        </scene>
+        <!--AutoLayoutSuperview-->
         <scene sceneID="k7n-X3-Zio">
             <objects>
-                <viewControllerPlaceholder storyboardName="Broken" id="hbd-bj-SHO" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AutoLayoutSuperview" id="hbd-bj-SHO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjr-wb-QRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258" y="-57"/>
+            <point key="canvasLocation" x="1327" y="-22"/>
         </scene>
     </scenes>
 </document>
